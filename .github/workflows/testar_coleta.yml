@@ -1,0 +1,32 @@
+name: RADAR SP - Teste de Coleta
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  testar-coleta:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Baixar codigo do RADAR
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Executar coletor
+        run: python scripts/coletar_diario.py
+
+      - name: Guardar resultado
+        uses: actions/upload-artifact@v4
+        with:
+          name: primeira-coleta-radar
+          path: dados/edicoes_coletadas.json
+          if-no-files-found: error
+          retention-days: 7
