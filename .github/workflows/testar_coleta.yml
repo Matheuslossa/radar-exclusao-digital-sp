@@ -4,12 +4,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: radar-sp-coleta
+  cancel-in-progress: false
 
 jobs:
   testar-coleta:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
 
     steps:
       - name: Baixar codigo do RADAR
@@ -23,10 +27,23 @@ jobs:
       - name: Executar coletor
         run: python scripts/coletar_diario.py
 
-      - name: Guardar resultado
+      - name: Salvar historico no GitHub
+        run: |
+          test -s dados/edicoes_coletadas.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/edicoes_coletadas.json
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteracao nova para salvar."
+          else
+            git commit -m "dados: registrar edicao do Diario Oficial"
+            git push origin HEAD:main
+          fi
+
+      - name: Guardar copia do resultado
         uses: actions/upload-artifact@v4
         with:
-          name: primeira-coleta-radar
+          name: coleta-radar-sp
           path: dados/edicoes_coletadas.json
           if-no-files-found: error
           retention-days: 7
