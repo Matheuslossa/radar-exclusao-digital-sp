@@ -1,0 +1,359 @@
+{
+  "schema": "radar.analise_ia_piloto.v0.1",
+  "projeto": "RADAR SP | Observatório científico de exclusão digital",
+  "territorio": "São Paulo (SP), IBGE 3550308",
+  "data_corte_referencial_local": "2026-10-20",
+  "data_orcamento_processamento_utc": "2026-10-21T00:57:59+00:00",
+  "meio": "Análise assistida pelo GPT-6 em conversa ChatGPT, sem chamada de API paga; regras/documentos preparados manualmente; resultados não são gerados automaticamente no GitHub.",
+  "tipo_de_produto": "triagem e hipóteses documentadas, não avaliação institucional definitiva",
+  "protocolo_usado": "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/docs/PROTOCOLO_CIENTIFICO_v0.1.md",
+  "fontes_primarias_de_dados": {
+    "historico_curado": "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+    "orcamento_2026_triagem": "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json",
+    "diario_edicao": "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/edicoes_coletadas.json",
+    "tcm_fonte": "https://iris.tcm.sp.gov.br/assets/data/dotacao/Dotacao2026.csv",
+    "ressalva": "Fonte Diário Oficial contém metadados da edição, sem extração dos atos; histórico é amostra e orçamento é triagem por palavras-chave."
+  },
+  "escopo": {
+    "atos_historicos_amostra": 12,
+    "registros_orcamento_processados": 7725,
+    "registros_orcamento_correspondentes": 38,
+    "fichas_de_analise": 7,
+    "ano_orcamento": 2026
+  },
+  "regras_de_interpretacao": [
+    "Não atribuir impacto real a partir de norma, dotação ou palavra-chave isolada.",
+    "E1 indica evidência documental fundamentada, não teste funcional E2, triangulação E3 ou impacto causal E4.",
+    "Nenhum valor deve ser somado ou atribuído a uma política sem validação de códigos completos, natureza da despesa, fonte, período e eventual duplicidade.",
+    "Um decreto revogado não comprova o fechamento de equipamento criado sob sua vigência.",
+    "A inexistência de alternativa em um texto normativo não comprova ausência de alternativa na operação.",
+    "Todos os apontamentos estão sujeitos à revisão humana antes de publicação como conclusão."
+  ],
+  "lacunas_transversais": [
+    "OCR/normalização do cabeçalho do CSV (p.ex. Orï¿½ado)",
+    "Códigos completos de dotações ausentes na saída da triagem",
+    "Data-base da execução financeira não confirmada no CSV",
+    "Algumas datas de publicação de atos não verificadas",
+    "Documentos jurídicos posteriores não catalogados na amostra histórica",
+    "Faltam dados territoriais, funcionais e de usuários"
+  ],
+  "analises": [
+    {
+      "id": "RADAR-IA-001",
+      "politica": "Política Municipal de Atendimento ao Cidadão / CONDEUSP",
+      "tema": "participacao_social",
+      "titulo": "Participação em plataforma eletrônica e exigência de cadastro",
+      "tipo": "hipotese_barreira",
+      "prioridade": "alta",
+      "evidencia": "E1",
+      "categorias": [
+        "R01",
+        "R02",
+        "R05"
+      ],
+      "base_documental": "O Decreto 62.959/2023 alterou o artigo 6º do Decreto 58.426/2018 para prever funcionamento do CONDEUSP por plataforma eletrônica. A Instrução Normativa CGM 3/2025, art. 5º, exige cadastro regular no Participe+ para usar a plataforma.",
+      "analise_ia": "A participação virtual pode reduzir custos de deslocamento e ampliar alcance, mas também tornar conectividade, identificação, acessibilidade e habilidades digitais relevantes para participar. O texto consultado não demonstra, por si, exclusividade absoluta do canal nem exclusão de pessoas.",
+      "ganho_potencial": "Abertura digital de processos de seleção e participação e possibilidade de ampliar participação remota.",
+      "risco_potencial": "Usuários sem acesso ou facilidade de cadastro podem enfrentar dificuldades; investigar se há apoio e alternativas viáveis.",
+      "nao_comprovado": "Não se verificou barreira funcional, inacessibilidade, recusa de participação ou impacto sobre representatividade.",
+      "verificacao": "Testar inscrição e participação no Participe+ com perfis e tecnologias assistivas; identificar canal presencial/assistido; consultar estatísticas de participantes por território e perfil, quando legal e eticamente cabível.",
+      "fontes": [
+        "https://legislacao.prefeitura.sp.gov.br/decreto-62959-de-23-de-novembro-de-2023/consolidado",
+        "https://legislacao.prefeitura.sp.gov.br/instrucao-normativa-controladoria-geral-do-municipio-cgm-3-de-10-de-novembro-de-2025",
+        "https://legislacao.prefeitura.sp.gov.br/decreto-58426-de-18-de-setembro-de-2018/consolidado"
+      ],
+      "ids_eventos": [
+        "SPH-005"
+      ],
+      "ids_dotacao": [],
+      "documentos_novos": [
+        "Decreto 62.959/2023",
+        "Instrução Normativa CGM 3/2025"
+      ],
+      "estado": "hipotese_ia_pendente_revisao_humana",
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false,
+      "fonte_repositorio": [
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json"
+      ],
+      "rastreio_dotacoes": []
+    },
+    {
+      "id": "RADAR-IA-002",
+      "politica": "Política Municipal de Atendimento ao Cidadão / CONDEUSP",
+      "tema": "alteracao_normativa",
+      "titulo": "Redução da previsão expressa de consulta sobre indicação do Ouvidor-Geral",
+      "tipo": "alteracao_consultiva",
+      "prioridade": "media",
+      "evidencia": "E1",
+      "categorias": [
+        "I01"
+      ],
+      "base_documental": "O Decreto 64.057/2025 deu nova redação ao art. 12 do Decreto 58.426/2018. A redação anterior mencionava possível consulta ao Conselho sobre a indicação do Ouvidor-Geral e serviços públicos; a nova mantém referência apenas a assuntos da prestação de serviços públicos.",
+      "analise_ia": "Houve uma mudança textual verificável no escopo da previsão de consulta. A expressão anterior era permissiva (“poderá”), portanto é necessário avaliar outras bases normativas e a prática antes de classificar a mudança como supressão de direito ou retrocesso institucional.",
+      "ganho_potencial": "Não determinado.",
+      "risco_potencial": "Possível diminuição de uma função consultiva expressamente citada no texto anterior.",
+      "nao_comprovado": "Não há evidência de mudança em indicações concretas, funcionamento do conselho ou direitos efetivamente exercidos.",
+      "verificacao": "Confrontar a redação de 2018, o Decreto 62.959/2023 e o 64.057/2025; verificar atas e consultas efetivamente realizadas e eventuais competências previstas em outros dispositivos.",
+      "fontes": [
+        "https://legislacao.prefeitura.sp.gov.br/decreto-64057-de-12-de-fevereiro-de-2025/consolidado",
+        "https://legislacao.prefeitura.sp.gov.br/decreto-58426-de-18-de-setembro-de-2018/consolidado"
+      ],
+      "ids_eventos": [
+        "SPH-005",
+        "SPH-007"
+      ],
+      "ids_dotacao": [],
+      "documentos_novos": [],
+      "estado": "hipotese_ia_pendente_revisao_humana",
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false,
+      "fonte_repositorio": [
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json"
+      ],
+      "rastreio_dotacoes": []
+    },
+    {
+      "id": "RADAR-IA-003",
+      "politica": "Descomplica SP",
+      "tema": "ligacao_lei_orcamento",
+      "titulo": "Crédito de 2026 coincide com duas dotações da base do TCM-SP",
+      "tipo": "correspondencia_documental",
+      "prioridade": "alta",
+      "evidencia": "E1",
+      "categorias": [],
+      "base_documental": "O Decreto 65.621/2026 suplementa duas linhas da ação 2403 em R$ 1.528.028,42 e R$ 22.535,14. Na base TCM-SP 2026, registros ID 201601 e 201895 têm exatamente esses valores na coluna Atualizado, que somam R$ 1.550.563,56; ambos mostram Pago igual a zero no recorte coletado.",
+      "analise_ia": "Correspondência exata de valor, exercício, nome da ação e contexto normativo é um forte indício de ligação, mas os códigos completos de dotação e a data-base precisam ser conciliados. Crédito para despesas de exercícios anteriores não equivale automaticamente a ampliação de serviço. O campo Pago zero neste recorte não prova ausência definitiva de pagamentos.",
+      "ganho_potencial": "Regularização orçamentária de obrigações de exercícios anteriores, sujeita a comprovação.",
+      "risco_potencial": "Confundir reforço de dotação com nova expansão do atendimento.",
+      "nao_comprovado": "Pagamento das duas dotações, vínculo contábil em nível de código completo e efeito nos serviços.",
+      "verificacao": "Confrontar as dotações detalhadas 23.10.04.126.4002.2403 e elementos 33909200 com o CSV original do TCM-SP e o Portal da Transparência, registrando a data-base do arquivo; buscar empenhos e pagamentos posteriores.",
+      "fontes": [
+        "https://legislacao.prefeitura.sp.gov.br/decreto-65621-de-7-de-outubro-de-2026",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json",
+        "https://iris.tcm.sp.gov.br/assets/data/dotacao/Dotacao2026.csv"
+      ],
+      "ids_eventos": [
+        "SPH-012"
+      ],
+      "ids_dotacao": [
+        "201601",
+        "201895"
+      ],
+      "documentos_novos": [],
+      "estado": "hipotese_ia_pendente_revisao_humana",
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false,
+      "fonte_repositorio": [
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json"
+      ],
+      "rastreio_dotacoes": [
+        {
+          "id_dotacao": "201601",
+          "descricao": "Manutenção e Operação do Descomplica SP",
+          "valores_brutos": {
+            "Orï¿½ado": ".00",
+            "Atualizado": "1528028.42",
+            "EmpenhadoLiquido": ".00",
+            "Liquidado": ".00",
+            "Pago": ".00"
+          }
+        },
+        {
+          "id_dotacao": "201895",
+          "descricao": "Manutenção e Operação do Descomplica SP",
+          "valores_brutos": {
+            "Orï¿½ado": ".00",
+            "Atualizado": "22535.14",
+            "EmpenhadoLiquido": ".00",
+            "Liquidado": ".00",
+            "Pago": ".00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "RADAR-IA-004",
+      "politica": "Descomplica SP",
+      "tema": "vigencia_normativa",
+      "titulo": "Decreto de criação de quatro unidades foi revogado em 2020",
+      "tipo": "alerta_vigencia",
+      "prioridade": "alta",
+      "evidencia": "E1",
+      "categorias": [],
+      "base_documental": "O Decreto 58.866/2019 criou unidades de Capela do Socorro, São Mateus, Penha e Jabaquara. O art. 72 do Decreto 59.336/2020 o revogou, conforme o Catálogo da Legislação.",
+      "analise_ia": "A linha do tempo deve exibir o evento histórico de 2019 com o estado normativo atualizado. A revogação em contexto de reorganização administrativa não comprova fechamento das unidades, perda de cobertura nem extinção dos serviços.",
+      "ganho_potencial": "Ato original de 2019 formalizou quatro unidades na organização administrativa vigente à época.",
+      "risco_potencial": "Exibir a norma revogada como se ainda fosse vigente e inferir fechamento sem comprovação.",
+      "nao_comprovado": "Se as unidades permaneceram em operação e sob qual instrumento normativo posterior.",
+      "verificacao": "Examinar os dispositivos de reorganização do Decreto 59.336/2020, cadastros atuais das unidades, contratos e séries históricas de atendimento.",
+      "fontes": [
+        "https://legislacao.prefeitura.sp.gov.br/decreto-58866-de-19-de-julho-de-2019/consolidado",
+        "https://legislacao.prefeitura.sp.gov.br/decreto-59336-de-7-de-abril-de-2020/consolidado"
+      ],
+      "ids_eventos": [
+        "SPH-009"
+      ],
+      "ids_dotacao": [],
+      "documentos_novos": [
+        "Decreto 59.336/2020"
+      ],
+      "estado": "hipotese_ia_pendente_revisao_humana",
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false,
+      "fonte_repositorio": [
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json"
+      ],
+      "rastreio_dotacoes": []
+    },
+    {
+      "id": "RADAR-IA-005",
+      "politica": "WiFi Livre SP",
+      "tema": "conectividade_publica",
+      "titulo": "Oferta prevista em equipamentos da assistência social",
+      "tipo": "ampliacao_potencial",
+      "prioridade": "alta",
+      "evidencia": "E1",
+      "categorias": [
+        "R04",
+        "I01"
+      ],
+      "base_documental": "A Lei 16.685/2017 criou o Wi-Fi Livre Sampa. A Portaria Conjunta SMIT/SMADS 2/2025 disciplina implantação em Vila Reencontro, CRAS, CREAS e Centro POP. Seu art. 4º remete a definição de unidades e quantidade de pontos de acesso à atuação conjunta das pastas.",
+      "analise_ia": "Há previsão regulatória compatível com ampliação potencial de conectividade em equipamentos socioassistenciais. O documento não apresenta um número final de unidades conectadas e não equivale a prova de instalações em funcionamento.",
+      "ganho_potencial": "Oferta de conectividade em equipamentos voltados a pessoas que procuram serviços socioassistenciais.",
+      "risco_potencial": "Instalação insuficiente, falhas de funcionamento ou necessidade de autenticação podem limitar o acesso, hipóteses ainda não verificadas.",
+      "nao_comprovado": "Quantidade instalada, disponibilidade, cobertura, desempenho e utilização pelos cidadãos.",
+      "verificacao": "Solicitar lista de pontos previstos e instalados por CRAS, CREAS, Centro POP e Vila Reencontro, contratos, data de ativação, indicadores de uptime e testes de acesso.",
+      "fontes": [
+        "https://legislacao.prefeitura.sp.gov.br/lei-16685-de-10-de-julho-de-2017/consolidado",
+        "https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-secretaria-municipal-de-inovacao-e-tecnologia-smit-secretaria-municipal-de-assistencia-e-desenvolvimento-social-smads-2-de-27-de-janeiro-de-2025"
+      ],
+      "ids_eventos": [
+        "SPH-001",
+        "SPH-004"
+      ],
+      "ids_dotacao": [
+        "187072",
+        "187073"
+      ],
+      "documentos_novos": [],
+      "estado": "hipotese_ia_pendente_revisao_humana",
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false,
+      "fonte_repositorio": [
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json"
+      ],
+      "rastreio_dotacoes": [
+        {
+          "id_dotacao": "187072",
+          "descricao": "Manutenção e Operação do Programa WIFI Livre",
+          "valores_brutos": {
+            "Orï¿½ado": "56983749.00",
+            "Atualizado": "53980732.00",
+            "EmpenhadoLiquido": "53980732.00",
+            "Liquidado": "28689920.00",
+            "Pago": "28689920.00"
+          }
+        },
+        {
+          "id_dotacao": "187073",
+          "descricao": "Manutenção e Operação do Programa WIFI Livre",
+          "valores_brutos": {
+            "Orï¿½ado": "300000.00",
+            "Atualizado": "284190.00",
+            "EmpenhadoLiquido": "35700.00",
+            "Liquidado": ".00",
+            "Pago": ".00"
+          }
+        }
+      ]
+    },
+    {
+      "id": "RADAR-IA-006",
+      "politica": "Descomplica SP",
+      "tema": "classificacao_orcamentaria",
+      "titulo": "Remanejamento de 2026 entre TIC e terceirização exige interpretação cuidadosa",
+      "tipo": "alteracao_orcamentaria",
+      "prioridade": "media",
+      "evidencia": "E1",
+      "categorias": [],
+      "base_documental": "O Decreto 65.133/2026 abriu crédito de R$ 4.854.618,90 para despesas de pessoal decorrentes de terceirização na ação 2403 e previu cobertura em dotações de serviços de TIC dessa mesma ação, no mesmo valor nominal.",
+      "analise_ia": "A movimentação entre naturezas de despesa é documentalmente identificável; não é suficiente para concluir redução líquida de investimento no programa ou piora na oferta digital.",
+      "ganho_potencial": "Adequação do custeio da operação, se vinculada às necessidades efetivas.",
+      "risco_potencial": "Possível mudança na estrutura de oferta e contratação, a investigar.",
+      "nao_comprovado": "Redução líquida de recursos do programa, diminuição de equipe, tecnologia ou número de atendimentos.",
+      "verificacao": "Conciliar valores por elemento e fonte antes/depois, documentos de contratação, objeto dos serviços de TIC, indicadores de execução e número de atendimentos realizados.",
+      "fontes": [
+        "https://legislacao.prefeitura.sp.gov.br/leis/decreto-65133-de-28-de-abril-de-2026",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json"
+      ],
+      "ids_eventos": [
+        "SPH-011"
+      ],
+      "ids_dotacao": [],
+      "documentos_novos": [],
+      "estado": "hipotese_ia_pendente_revisao_humana",
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false,
+      "fonte_repositorio": [
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json"
+      ],
+      "rastreio_dotacoes": []
+    },
+    {
+      "id": "RADAR-IA-007",
+      "politica": "Iniciativas de inclusão digital para pessoas idosas (vínculo orçamentário em apuração)",
+      "tema": "anomalia_orcamentaria",
+      "titulo": "Dotação com Orçado positivo e Atualizado zero, sem inferência de cancelamento de serviço",
+      "tipo": "pergunta_de_auditoria",
+      "prioridade": "media",
+      "evidencia": "E0",
+      "categorias": [
+        "R04",
+        "R05"
+      ],
+      "base_documental": "O registro ID 193164 da triagem TCM-SP 2026 tem descrição ampla que inclui inclusão digital entre outras ações para pessoas idosas; apresenta Orçado R$ 650.000,00 e Atualizado R$ 0,00 no recorte coletado.",
+      "analise_ia": "O contraste exige rastrear eventuais remanejamentos ou reclassificações. O título da rubrica contém diversas ações, e não há vínculo demonstrado com programa de inclusão digital específico.",
+      "ganho_potencial": "Não determinado.",
+      "risco_potencial": "Hipótese de redirecionamento de dotação, ainda sem base para classificar como perda de atendimento.",
+      "nao_comprovado": "Corte líquido da política, interrupção de oficinas ou serviços, população atingida.",
+      "verificacao": "Localizar código completo, atos de alteração do orçamento, eventual destino dos recursos e execução específica de iniciativas de inclusão digital para idosos.",
+      "fontes": [
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json",
+        "https://iris.tcm.sp.gov.br/assets/data/dotacao/Dotacao2026.csv"
+      ],
+      "ids_eventos": [],
+      "ids_dotacao": [
+        "193164"
+      ],
+      "documentos_novos": [],
+      "estado": "hipotese_ia_pendente_revisao_humana",
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false,
+      "fonte_repositorio": [
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/historico_politicas_sp.json",
+        "https://github.com/Matheuslossa/radar-exclusao-digital-sp/blob/main/dados/triagem_orcamento_2026.json"
+      ],
+      "rastreio_dotacoes": [
+        {
+          "id_dotacao": "193164",
+          "descricao": "Prog. para Valorização de Iniciativas para Idosos de Subsídios a Atividades Culturais Esportivas de Convívio Lazer Inclusão Digital e Geração de Renda Realizadas por Pessoas Idosas ou Organizações com",
+          "valores_brutos": {
+            "Orï¿½ado": "650000.00",
+            "Atualizado": ".00",
+            "EmpenhadoLiquido": ".00",
+            "Liquidado": ".00",
+            "Pago": ".00"
+          }
+        }
+      ]
+    }
+  ]
+}
