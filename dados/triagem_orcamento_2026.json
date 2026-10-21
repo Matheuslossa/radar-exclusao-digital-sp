@@ -1,0 +1,1278 @@
+{
+  "versao_esquema": "0.2",
+  "status": "triagem_automatizada_nao_validada",
+  "municipio_ibge": "3550308",
+  "ano": 2026,
+  "data_processamento_utc": "2026-10-21T00:57:59+00:00",
+  "fonte_oficial": "https://iris.tcm.sp.gov.br/assets/data/dotacao/Dotacao2026.csv",
+  "codificacao_entrada_utilizada": "cp850",
+  "cabecalhos": [
+    "Id Dotaï¿½ï¿½o",
+    "Sigla da Empresa",
+    "Descriï¿½ï¿½o da empresa",
+    "Cï¿½digo do ï¿½rgï¿½o",
+    "Descriï¿½ï¿½o do ï¿½rgï¿½o",
+    "Cï¿½digo da unidade",
+    "Descriï¿½ï¿½o da unidade",
+    "Cï¿½digo da funï¿½ï¿½o",
+    "Descriï¿½ï¿½o da funï¿½ï¿½o",
+    "Cï¿½digo da subfunï¿½ï¿½o",
+    "Descriï¿½ï¿½o da subfunï¿½ï¿½o",
+    "Cï¿½digo do programa do governo",
+    "Descriï¿½ï¿½o do programa do governo",
+    "Cï¿½digo do projeto/atividade",
+    "Descriï¿½ï¿½o do projeto/atividade",
+    "Cï¿½digo da conta despesa",
+    "Descriï¿½ï¿½o da conta despesa",
+    "Cï¿½digo da categoria econï¿½mica",
+    "Descriï¿½ï¿½o da categoria econï¿½mica",
+    "Cï¿½digo do grupo de natureza da despesa",
+    "Descriï¿½ï¿½o do grupo de natureza da despesa",
+    "Cï¿½digo da modalidade de aplicaï¿½ï¿½o",
+    "Descriï¿½ï¿½o da modalidade de aplicaï¿½ï¿½o",
+    "Cï¿½digo do elemento de despesa",
+    "Descriï¿½ï¿½o do elemento de despesa",
+    "Cï¿½digo da fonte de recurso",
+    "Descriï¿½ï¿½o da fonte de recurso",
+    "Exercï¿½cio",
+    "Proposto",
+    "Orï¿½ado",
+    "Atualizado",
+    "EmpenhadoBruto",
+    "Anulado",
+    "EmpenhadoLiquido",
+    "Liquidado",
+    "Pago",
+    "Congelado",
+    "RestosSaldoTransferido",
+    "RestosProcessados",
+    "RestosNaoProcessados",
+    "RestosLiquidado",
+    "RestosPago",
+    "RestosCancelado",
+    "RestosSaldo"
+  ],
+  "campos_descritivos_utilizados": [
+    "Descriï¿½ï¿½o do programa do governo",
+    "Descriï¿½ï¿½o do projeto/atividade"
+  ],
+  "campos_financeiros_preservados": [
+    "Proposto",
+    "Atualizado",
+    "EmpenhadoBruto",
+    "Anulado",
+    "EmpenhadoLiquido",
+    "Liquidado",
+    "Pago",
+    "Congelado",
+    "RestosSaldoTransferido",
+    "RestosProcessados",
+    "RestosNaoProcessados",
+    "RestosLiquidado",
+    "RestosPago",
+    "RestosCancelado",
+    "RestosSaldo",
+    "Orï¿½ado"
+  ],
+  "quantidade_linhas_processadas": 7725,
+  "quantidade_correspondencias_textuais": 38,
+  "correspondencias_por_grupo": {
+    "descomplica": 25,
+    "wifi": 2,
+    "telecentros": 8,
+    "atendimento_cidadao": 2,
+    "inclusao_digital": 1
+  },
+  "correspondencias_por_codigo_acao": {},
+  "limite_amostra": 100,
+  "amostra": [
+    {
+      "linha_csv": 497,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "186205",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "1000.00",
+        "Atualizado": "1000.00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "1000.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1156,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187059",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "150000.00",
+        "Atualizado": "117777.00",
+        "EmpenhadoBruto": "50550.24",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "50550.24",
+        "Liquidado": "10144.49",
+        "Pago": "10144.49",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "150000.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1157,
+      "grupos_indicio": [
+        "wifi"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187073",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Programa WIFI Livre"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "300000.00",
+        "Atualizado": "284190.00",
+        "EmpenhadoBruto": "35700.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "35700.00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "300000.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1182,
+      "grupos_indicio": [
+        "telecentros"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187081",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação de Telecentros"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "799757.00",
+        "Atualizado": "799757.00",
+        "EmpenhadoBruto": "219935.96",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "219935.96",
+        "Liquidado": "203214.29",
+        "Pago": "203214.29",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "799757.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1193,
+      "grupos_indicio": [
+        "telecentros"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187078",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação de Telecentros"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "9287836.00",
+        "Atualizado": "9287836.00",
+        "EmpenhadoBruto": "10265231.95",
+        "Anulado": "1187221.46",
+        "EmpenhadoLiquido": "9078010.49",
+        "Liquidado": "8963617.92",
+        "Pago": "8963617.92",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "9287836.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1222,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187063",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "42724646.00",
+        "Atualizado": "22825500.62",
+        "EmpenhadoBruto": "32928904.34",
+        "Anulado": "11882221.62",
+        "EmpenhadoLiquido": "21046682.72",
+        "Liquidado": "13810217.66",
+        "Pago": "13129302.92",
+        "Congelado": ".57",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "42724646.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1224,
+      "grupos_indicio": [
+        "atendimento_cidadao"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187076",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Difusão Fomento e Pesquisas Aplicadas à Gestão de Tecnologia Inovação e Atendimento ao Cidadão"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "2869498.00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "2869498.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1282,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187061",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "1690734.00",
+        "Atualizado": "1327527.00",
+        "EmpenhadoBruto": "1325252.27",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "1325252.27",
+        "Liquidado": "898224.98",
+        "Pago": "872423.96",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "1690734.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1283,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187064",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "23519401.00",
+        "Atualizado": "13210237.19",
+        "EmpenhadoBruto": "35621029.96",
+        "Anulado": "22410792.77",
+        "EmpenhadoLiquido": "13210237.19",
+        "Liquidado": "8915250.54",
+        "Pago": "7507584.62",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "23519401.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1284,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187065",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "50000.00",
+        "Atualizado": "39259.00",
+        "EmpenhadoBruto": "39259.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "39259.00",
+        "Liquidado": "39259.00",
+        "Pago": "39259.00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "50000.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1300,
+      "grupos_indicio": [
+        "wifi"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187072",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Programa WIFI Livre"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "56983749.00",
+        "Atualizado": "53980732.00",
+        "EmpenhadoBruto": "53980732.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "53980732.00",
+        "Liquidado": "28689920.00",
+        "Pago": "28689920.00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "56983749.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1301,
+      "grupos_indicio": [
+        "telecentros"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187080",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação de Telecentros"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "16973.00",
+        "Atualizado": "16973.00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "16973.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 1302,
+      "grupos_indicio": [
+        "telecentros"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "187082",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação de Telecentros"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "823076.00",
+        "Atualizado": "823076.00",
+        "EmpenhadoBruto": "823076.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "823076.00",
+        "Liquidado": "615783.98",
+        "Pago": "615783.98",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "823076.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 2964,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "189706",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Construção e Implantação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "1000.00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "1000.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 3564,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "191428",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "950461.00",
+        "Atualizado": "950461.00",
+        "EmpenhadoBruto": "956941.63",
+        "Anulado": "42480.66",
+        "EmpenhadoLiquido": "914460.97",
+        "Liquidado": "401118.22",
+        "Pago": "371879.64",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "950461.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 3815,
+      "grupos_indicio": [
+        "telecentros"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "191536",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação de Telecentros"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "10027.00",
+        "Atualizado": "10027.00",
+        "EmpenhadoBruto": "13396.72",
+        "Anulado": "3369.72",
+        "EmpenhadoLiquido": "10027.00",
+        "Liquidado": "6657.28",
+        "Pago": "6657.28",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "10027.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4032,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "191648",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": "591634.00",
+        "Atualizado": "563687.96",
+        "EmpenhadoBruto": "1063687.96",
+        "Anulado": "500000.00",
+        "EmpenhadoLiquido": "563687.96",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "591634.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4342,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193312",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Construção e Implantação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "273851.72",
+        "EmpenhadoBruto": "273851.72",
+        "Anulado": "113573.14",
+        "EmpenhadoLiquido": "160278.58",
+        "Liquidado": "160278.58",
+        "Pago": "160278.58",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4343,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193314",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Construção e Implantação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "106280.44",
+        "EmpenhadoBruto": "106280.44",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "106280.44",
+        "Liquidado": "106280.44",
+        "Pago": "106280.44",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4377,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193310",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Construção e Implantação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "804.66",
+        "EmpenhadoBruto": "804.66",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "804.66",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4378,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193311",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Construção e Implantação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4379,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193315",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Construção e Implantação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "1018.00",
+        "EmpenhadoBruto": "1018.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "1018.00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4486,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193476",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "1580830.79",
+        "EmpenhadoBruto": "1648116.08",
+        "Anulado": "110122.61",
+        "EmpenhadoLiquido": "1537993.47",
+        "Liquidado": "1196428.32",
+        "Pago": "1184312.41",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4506,
+      "grupos_indicio": [
+        "inclusao_digital"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193164",
+        "Descriï¿½ï¿½o do programa do governo": "Políticas para População Idosa",
+        "Descriï¿½ï¿½o do projeto/atividade": "Prog. para Valorização de Iniciativas para Idosos de Subsídios a Atividades Culturais Esportivas de Convívio Lazer Inclusão Digital e Geração de Renda Realizadas por Pessoas Idosas ou Organizações com"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "650000.00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4520,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193477",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "4663617.00",
+        "EmpenhadoBruto": "4663617.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "4663617.00",
+        "Liquidado": "3791296.14",
+        "Pago": "3791296.14",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4606,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193313",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Construção e Implantação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": ".38",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 4739,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "193475",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "19098293.21",
+        "EmpenhadoBruto": "19247378.69",
+        "Anulado": "149085.48",
+        "EmpenhadoLiquido": "19098293.21",
+        "Liquidado": "12846109.86",
+        "Pago": "11288446.89",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 5021,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "194083",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 5789,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "194905",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 5948,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "194908",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "337634.40",
+        "EmpenhadoBruto": "275783.60",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "275783.60",
+        "Liquidado": "99618.81",
+        "Pago": "73878.93",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 6227,
+      "grupos_indicio": [
+        "atendimento_cidadao"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "194856",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Difusão Fomento e Pesquisas Aplicadas à Gestão de Tecnologia Inovação e Atendimento ao Cidadão"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 6256,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "194906",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "60000.00",
+        "EmpenhadoBruto": "46711.60",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "46711.60",
+        "Liquidado": "30000.00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 6289,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "194907",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 6786,
+      "grupos_indicio": [
+        "telecentros"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "195431",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação de Telecentros"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "408492.00",
+        "EmpenhadoBruto": "408492.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "408492.00",
+        "Liquidado": "408492.00",
+        "Pago": "408492.00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 6873,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "201601",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "1528028.42",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 6897,
+      "grupos_indicio": [
+        "telecentros"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "199692",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação de Telecentros"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 7373,
+      "grupos_indicio": [
+        "telecentros"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "200971",
+        "Descriï¿½ï¿½o do programa do governo": "Promoção da Cidadania e da Diversidade",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação de Telecentros"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "10152.92",
+        "EmpenhadoBruto": "10152.92",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "10152.92",
+        "Liquidado": "5283.86",
+        "Pago": "3713.10",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    },
+    {
+      "linha_csv": 7686,
+      "grupos_indicio": [
+        "descomplica"
+      ],
+      "campos": {
+        "Id Dotaï¿½ï¿½o": "201895",
+        "Descriï¿½ï¿½o do programa do governo": "Qualificação e Inovação do Serviço Público",
+        "Descriï¿½ï¿½o do projeto/atividade": "Manutenção e Operação do Descomplica SP"
+      },
+      "valores_brutos_por_linha": {
+        "Proposto": ".00",
+        "Atualizado": "22535.14",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "vinculo_politica": "correspondencia_textual_a_validar",
+      "contabilizar_como_despesa_da_politica": false
+    }
+  ],
+  "totais_orcamentarios_calculados": false,
+  "avisos": [
+    "Valores brutos por linha servem à auditoria; não são somados nesta fase.",
+    "Correspondência textual não demonstra execução financeira ou vínculo causal.",
+    "Identificar possíveis duplicidades, valores negativos, fonte e fase contábil.",
+    "Validar períodos, códigos de ação e vínculos normativos antes de publicar totais.",
+    "Se os textos vierem com caracteres estranhos, conferir codificação da fonte."
+  ],
+  "bytes_download": 4261799,
+  "sha256_download": "5bd90248dc35d3a67e42371e11489c53600c6292af494879ad547819c4f1c7d7"
+}
