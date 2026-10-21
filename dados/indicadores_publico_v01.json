@@ -1,0 +1,476 @@
+{
+  "schema": "radar.publico_alcance.v0.1",
+  "data_corte": "2026-10-21",
+  "municipio": "São Paulo/SP",
+  "escopo": "Marcos e indicadores esparsos reportados oficialmente; não representa série anual completa, contagem de usuários únicos nem pesquisa de perfil amostral.",
+  "alertas": [
+    "Anos sem registro no painel são lacunas de levantamento, não zero atendimentos.",
+    "Não se somam acessos, atendimentos, solicitações, inscrições, capacitações ou usuários cadastrados.",
+    "Notícias institucionais podem usar terminologia imprecisa. O RADAR preserva o tipo do indicador e solicita validação com bases administrativas.",
+    "Perfis só são considerados medidos quando a fonte informa algum recorte. Público-alvo não equivale a distribuição real dos usuários."
+  ],
+  "politicas": [
+    {
+      "id": "descomplica",
+      "nome": "Descomplica SP",
+      "inicio_ano": 2018,
+      "origem": "Programa inaugurado em 2018",
+      "descricao": "Atendimento presencial e assistido a serviços municipais e de outras esferas.",
+      "metricas": [
+        {
+          "id": "atendimentos_anuais",
+          "nome": "Atendimentos por ano",
+          "unidade": "atendimentos",
+          "tipo": "anual",
+          "comparavel": true,
+          "registros": [
+            {
+              "periodo": "2021",
+              "ano": 2021,
+              "valor": 408149,
+              "operador": "=",
+              "rotulo": "408.149",
+              "fonte": "descomplica_2026",
+              "nota": "Valor anual informado retrospectivamente na publicação de agosto de 2026."
+            },
+            {
+              "periodo": "2025",
+              "ano": 2025,
+              "valor": 2977285,
+              "operador": "=",
+              "rotulo": "2.977.285",
+              "fonte": "descomplica_2026",
+              "nota": "A fonte usa 'pessoas atendidas', mas não especifica deduplicação de usuários."
+            }
+          ]
+        },
+        {
+          "id": "acumulado",
+          "nome": "Marcos acumulados desde a criação",
+          "unidade": "atendimentos acumulados divulgados",
+          "tipo": "acumulado",
+          "comparavel": false,
+          "registros": [
+            {
+              "periodo": "mar/2024",
+              "ano": 2024,
+              "valor": 5000000,
+              "operador": ">",
+              "rotulo": "> 5 milhões",
+              "fonte": "descomplica_2024",
+              "nota": "Marco divulgado em março de 2024; valor inferior conservador."
+            },
+            {
+              "periodo": "dez/2025",
+              "ano": 2025,
+              "valor": 10000000,
+              "operador": "≥",
+              "rotulo": "10 milhões",
+              "fonte": "descomplica_dez2025",
+              "nota": "Marco de 10 milhões atingido em dezembro de 2025."
+            },
+            {
+              "periodo": "ago/2026",
+              "ano": 2026,
+              "valor": 11500000,
+              "operador": "≈",
+              "rotulo": "≈ 11,5 milhões",
+              "fonte": "descomplica_2026",
+              "nota": "Número arredondado divulgado pela Prefeitura; não confundir com usuários únicos."
+            }
+          ]
+        }
+      ],
+      "perfis": [
+        {
+          "categoria": "Usuários por sexo, idade, raça/cor e renda",
+          "tipo": "lacuna",
+          "descricao": "Não foi localizado um levantamento público representativo com percentuais de usuários do programa."
+        },
+        {
+          "categoria": "Pesquisa pontual em serviços da Dívida Ativa (2022)",
+          "tipo": "exemplo_unidade",
+          "descricao": "A PGM publicou um painel de perfil de usuários desses serviços nas praças do Descomplica, com coleta por 10 dias em junho de 2022. Este recorte não representa a população de todas as unidades, nem informa nesta amostra percentual verificável para o conjunto do programa.",
+          "fonte": "pesquisa_pgm_2022"
+        },
+        {
+          "categoria": "Cadastro Único e assistência social",
+          "tipo": "publico_servico",
+          "descricao": "A Prefeitura lista atualização cadastral e serviços sociais entre as demandas atendidas; não informa a participação desse grupo no total.",
+          "fonte": "descomplica_2026"
+        },
+        {
+          "categoria": "Trabalhadores e pessoas buscando emprego",
+          "tipo": "publico_servico",
+          "descricao": "Existem serviços do CATe, empregabilidade e documentação trabalhista, mas não há percentual de pessoas usuárias publicado nesta amostra.",
+          "fonte": "descomplica_dez2025"
+        },
+        {
+          "categoria": "Pessoas idosas e com deficiência",
+          "tipo": "publico_servico",
+          "descricao": "Há serviços como Bilhete Único para idosos e pessoas com deficiência. Disponibilidade não determina composição do público.",
+          "fonte": "descomplica_2026"
+        },
+        {
+          "categoria": "Moradores de áreas periféricas",
+          "tipo": "cobertura",
+          "descricao": "O Descomplica Móvel realiza ações em regiões periféricas; a fonte registra mais de 26 mil atendimentos acumulados pelas vans em agosto de 2026, sem recorte demográfico.",
+          "fonte": "descomplica_2026"
+        }
+      ],
+      "lacunas": [
+        "Obter série anual de 2018 a 2026, segregada por unidade e serviço, sem duplicação indevida.",
+        "Solicitar perfil agregado por faixa etária, sexo/gênero autodeclarado, território, escolaridade e deficiência, caso disponível.",
+        "Identificar quantos atendimentos envolveram ajuda para completar serviço digital."
+      ]
+    },
+    {
+      "id": "wifi",
+      "nome": "WiFi Livre SP",
+      "inicio_ano": 2014,
+      "origem": "Primeiro ponto instalado em 2014",
+      "descricao": "Conectividade gratuita em espaços e equipamentos públicos.",
+      "metricas": [
+        {
+          "id": "acessos_anuais",
+          "nome": "Acessos por ano",
+          "unidade": "acessos",
+          "tipo": "anual",
+          "comparavel": false,
+          "registros": [
+            {
+              "periodo": "2023",
+              "ano": 2023,
+              "valor": 16000000,
+              "operador": ">",
+              "rotulo": "> 16 milhões",
+              "fonte": "wifi_2025",
+              "nota": "Único ano completo com valor de acessos localizado na amostra; não são pessoas únicas."
+            }
+          ]
+        },
+        {
+          "id": "acessos_acumulados",
+          "nome": "Acessos acumulados divulgados",
+          "unidade": "acessos acumulados",
+          "tipo": "acumulado",
+          "comparavel": false,
+          "registros": [
+            {
+              "periodo": "jun/2025",
+              "ano": 2025,
+              "valor": 400000000,
+              "operador": ">",
+              "rotulo": "> 400 milhões",
+              "fonte": "wifi_2025",
+              "nota": "Total acumulado arredondado e divulgado em junho de 2025."
+            },
+            {
+              "periodo": "out/2026",
+              "ano": 2026,
+              "valor": 1000000000,
+              "operador": ">",
+              "rotulo": "> 1 bilhão",
+              "fonte": "wifi_2026",
+              "nota": "Total acumulado arredondado divulgado em outubro de 2026."
+            }
+          ]
+        }
+      ],
+      "perfis": [
+        {
+          "categoria": "Perfil individual dos usuários",
+          "tipo": "lacuna",
+          "descricao": "Não há distribuição pública de idade, sexo ou renda nesta amostra. A SMIT informa que não trata dados pessoais de navegação; isso não permite deduzir o perfil de quem se conecta.",
+          "fonte": "wifi_2026"
+        },
+        {
+          "categoria": "Territórios vulneráveis",
+          "tipo": "cobertura",
+          "descricao": "A Prefeitura informa 3.200 pontos em comunidades atendidas na expansão desde o segundo semestre de 2024; localização do equipamento não descreve a renda de cada usuário.",
+          "fonte": "wifi_2026"
+        },
+        {
+          "categoria": "Público potencial",
+          "tipo": "publico_servico",
+          "descricao": "Qualquer pessoa com aparelho compatível pode utilizar os pontos; não há evidência de grupo majoritário.",
+          "fonte": "wifi_2014"
+        }
+      ],
+      "lacunas": [
+        "Obter contagens anuais de sessões, usuários distintos anonimizados se disponíveis e pontos ativos para 2014–2026.",
+        "Analisar uso e cobertura por território sem identificação pessoal ou rastreamento individual.",
+        "Documentar mudanças metodológicas no conceito de 'acesso' ao longo dos contratos."
+      ]
+    },
+    {
+      "id": "telecentros",
+      "nome": "Telecentros",
+      "inicio_ano": 2001,
+      "origem": "Primeira unidade inaugurada em junho de 2001",
+      "descricao": "Computadores públicos, acesso assistido e capacitação digital.",
+      "metricas": [
+        {
+          "id": "atendimentos_recortes",
+          "nome": "Atendimentos divulgados (períodos distintos)",
+          "unidade": "atendimentos no recorte",
+          "tipo": "recortes",
+          "comparavel": false,
+          "registros": [
+            {
+              "periodo": "jan–set/2023",
+              "ano": 2023,
+              "valor": 841356,
+              "operador": "=",
+              "rotulo": "841.356",
+              "fonte": "telecentros_2023",
+              "nota": "Apenas os nove primeiros meses de 2023, não o ano inteiro."
+            },
+            {
+              "periodo": "jan–jul/2025",
+              "ano": 2025,
+              "valor": 911000,
+              "operador": "≈",
+              "rotulo": "≈ 911 mil",
+              "fonte": "telecentros_julho2025",
+              "nota": "Apenas sete meses de 2025; não somar com o total anual."
+            },
+            {
+              "periodo": "2025 completo",
+              "ano": 2025,
+              "valor": 1500000,
+              "operador": "≈",
+              "rotulo": "≈ 1,5 milhão",
+              "fonte": "telecentros_2025",
+              "nota": "Ano completo de 2025, número arredondado."
+            }
+          ]
+        },
+        {
+          "id": "usuarios_cadastrados",
+          "nome": "Usuários cadastrados divulgados",
+          "unidade": "cadastros acumulados divulgados",
+          "tipo": "cadastral",
+          "comparavel": false,
+          "registros": [
+            {
+              "periodo": "ago/2006",
+              "ano": 2006,
+              "valor": 960000,
+              "operador": ">",
+              "rotulo": "> 960 mil",
+              "fonte": "telecentros_2006",
+              "nota": "Cadastros acumulados da rede em 2006; não são atendimentos nem cadastros de 2006 somente."
+            }
+          ]
+        },
+        {
+          "id": "capacitacoes",
+          "nome": "Capacitações em 2025",
+          "unidade": "capacitações",
+          "tipo": "anual",
+          "comparavel": false,
+          "registros": [
+            {
+              "periodo": "2025",
+              "ano": 2025,
+              "valor": 60000,
+              "operador": "≈",
+              "rotulo": "≈ 60 mil",
+              "fonte": "telecentros_2025",
+              "nota": "Eventos/capacitações divulgados, não necessariamente pessoas distintas."
+            }
+          ]
+        }
+      ],
+      "perfis": [
+        {
+          "categoria": "Pessoas com 50 anos ou mais",
+          "tipo": "recorte_medido",
+          "descricao": "Cerca de 30 mil pessoas 50+ participaram de cursos de educação digital em 2025. Isto é um subgrupo de capacitados, não percentual do total de usuários dos telecentros.",
+          "valor": 30000,
+          "rotulo_valor": "≈ 30 mil participantes",
+          "fonte": "telecentros_2025"
+        },
+        {
+          "categoria": "População idosa (60+)",
+          "tipo": "publico_servico",
+          "descricao": "A Prefeitura destaca cursos de segurança digital e prevenção de golpes voltados aos mais velhos; não informa sua proporção entre os atendimentos.",
+          "fonte": "telecentros_julho2025"
+        },
+        {
+          "categoria": "Pessoas com deficiência",
+          "tipo": "exemplo_unidade",
+          "descricao": "Notícia cita atendimento a pessoas com deficiência em unidade específica; não existe estimativa da rede inteira.",
+          "fonte": "telecentros_julho2025"
+        },
+        {
+          "categoria": "Moradores de áreas periféricas",
+          "tipo": "cobertura",
+          "descricao": "A rede foi implantada para ampliar acesso em regiões periféricas; localização não comprova o perfil socioeconômico dos usuários.",
+          "fonte": "telecentros_2006"
+        },
+        {
+          "categoria": "Distribuição de idade, sexo, renda e escolaridade",
+          "tipo": "lacuna",
+          "descricao": "Não foi encontrada pesquisa representativa por público, unidade ou ano."
+        }
+      ],
+      "lacunas": [
+        "Recuperar dados do SGTF, com definição de atendimento e de pessoa única, ano a ano desde 2001.",
+        "Solicitar tabulações agregadas por público e por unidade, com supressão de células pequenas.",
+        "Separar uso livre, formação, matrículas e conclusão de cursos."
+      ]
+    },
+    {
+      "id": "atendimento",
+      "nome": "Política de Atendimento / SP156",
+      "inicio_ano": 2018,
+      "origem": "Política Municipal de Atendimento ao Cidadão instituída em 2018",
+      "descricao": "O SP156 é um indicador de apenas parte dessa política, não de todas as pessoas atendidas pelo município.",
+      "metricas": [
+        {
+          "id": "solicitacoes",
+          "nome": "Solicitações pelo SP156",
+          "unidade": "solicitações",
+          "tipo": "recortes",
+          "comparavel": false,
+          "registros": [
+            {
+              "periodo": "jan–jun/2025",
+              "ano": 2025,
+              "valor": 1300000,
+              "operador": "≈",
+              "rotulo": "≈ 1,3 milhão",
+              "fonte": "sp156_2025_h1",
+              "nota": "Primeiro semestre de 2025, não ano inteiro."
+            },
+            {
+              "periodo": "2025 completo",
+              "ano": 2025,
+              "valor": 2100000,
+              "operador": ">",
+              "rotulo": "> 2,1 milhões",
+              "fonte": "sp156_2025",
+              "nota": "Total de solicitações em 2025; não representa os demais canais de atendimento municipais fora do SP156."
+            }
+          ]
+        },
+        {
+          "id": "cadastrados",
+          "nome": "Usuários cadastrados no SP156",
+          "unidade": "usuários cadastrados",
+          "tipo": "cadastral",
+          "comparavel": false,
+          "registros": [
+            {
+              "periodo": "fim de 2025",
+              "ano": 2025,
+              "valor": 4100000,
+              "operador": "≈",
+              "rotulo": "4,1 milhões",
+              "fonte": "sp156_2025",
+              "nota": "Base de pessoas/contas cadastradas, não uso ativo anual. Outra comunicação municipal citou mais de 6 milhões de usuários em agosto de 2025, com conceito não reconciliado."
+            }
+          ]
+        }
+      ],
+      "perfis": [
+        {
+          "categoria": "Idade, sexo, escolaridade, raça/cor e renda",
+          "tipo": "lacuna",
+          "descricao": "Não foi localizado recorte representativo de usuários da Política de Atendimento ou do SP156."
+        },
+        {
+          "categoria": "Canais diferentes de acesso",
+          "tipo": "cobertura",
+          "descricao": "O SP156 disponibiliza canais telefônicos, digitais e presenciais. O canal escolhido não identifica automaticamente perfil socioeconômico.",
+          "fonte": "sp156_canais"
+        },
+        {
+          "categoria": "Acesso anônimo",
+          "tipo": "publico_servico",
+          "descricao": "Alguns serviços aceitam solicitação anônima, outros exigem autenticação. A proporção de usuários em cada modalidade não foi apurada.",
+          "fonte": "sp156_canais"
+        }
+      ],
+      "lacunas": [
+        "Recuperar relatórios anuais de solicitações por canal e tipo de serviço desde 2018.",
+        "Reconciliar divergência dos números de usuários cadastrados divulgados em 2025.",
+        "Construir indicadores para política inteira sem somar o SP156 e atendimentos presenciais duplicados."
+      ]
+    }
+  ],
+  "fontes": {
+    "descomplica_2026": {
+      "titulo": "Com 99% de aprovação, Descomplica SP é referência em serviço público",
+      "url": "https://prefeitura.sp.gov.br/web/inovacao/w/com-99-de-aprova%C3%A7%C3%A3o-descomplica-sp-%C3%A9-refer%C3%AAncia-em-servi%C3%A7o-p%C3%BAblico",
+      "publicacao": "2026-08-11"
+    },
+    "descomplica_2024": {
+      "titulo": "Prefeitura entrega novas instalações do Descomplica em Campo Limpo",
+      "url": "https://prefeitura.sp.gov.br/w/prefeitura-entrega-novas-instala%C3%A7%C3%B5es-do-descomplica-sp-em-campo-limpo-%C2%A0",
+      "publicacao": "2024"
+    },
+    "descomplica_dez2025": {
+      "titulo": "Descomplica alcança marca de 10 milhões de atendimentos realizados",
+      "url": "https://prefeitura.sp.gov.br/web/inovacao/w/descomplica-alcan%C3%A7a-marca-de-10-milh%C3%B5es-de-atendimentos-realizados",
+      "publicacao": "2025-12-04"
+    },
+    "wifi_2025": {
+      "titulo": "Programa WiFi Livre SP, atualização de junho de 2025",
+      "url": "https://www.prefeitura.sp.gov.br/web/inovacao/w/inclusao_digital/152219",
+      "publicacao": "2025-06-09"
+    },
+    "wifi_2026": {
+      "titulo": "Saiba mais sobre o programa WiFi Livre, atualização de outubro de 2026",
+      "url": "https://sampanews.sp.gov.br/web/inovacao/w/inclusao_digital/152219",
+      "publicacao": "2026-10-01"
+    },
+    "wifi_2014": {
+      "titulo": "Gestão Urbana, apresentação histórica WiFi Livre SP",
+      "url": "https://gestaourbana.prefeitura.sp.gov.br/rede-de-equipamentos/wifi/",
+      "publicacao": null
+    },
+    "telecentros_2006": {
+      "titulo": "Audiência Pública explica novo modelo de inclusão digital",
+      "url": "https://prefeitura.sp.gov.br/web/comunicacao/w/noticias/135745",
+      "publicacao": "2006-08-25"
+    },
+    "telecentros_2023": {
+      "titulo": "SMIT inaugura unidades de Telecentro na Zona Leste",
+      "url": "https://prefeitura.sp.gov.br/web/inovacao/w/noticias/355688",
+      "publicacao": "2023-10-09"
+    },
+    "telecentros_julho2025": {
+      "titulo": "Prefeitura capacita 30 mil pessoas em educação digital em 2025",
+      "url": "https://prefeitura.sp.gov.br/web/prefeitura-de-sao-paulo/w/prefeitura-capacita-30-mil-pessoas-em-educa%C3%A7%C3%A3o-digital-em-2025",
+      "publicacao": "2025"
+    },
+    "telecentros_2025": {
+      "titulo": "2025 se destaca como ano de avanço para a tecnologia paulistana",
+      "url": "https://www2.prefeitura.sp.gov.br/web/inovacao/w/2025-se-destaca-como-ano-de-avan%C3%A7o-para-a-tecnologia-paulistana",
+      "publicacao": "2026-01-05"
+    },
+    "sp156_2025_h1": {
+      "titulo": "Integração entre dados, segurança e inovação colocam São Paulo na vanguarda digital",
+      "url": "https://prefeitura.sp.gov.br/web/inovacao/w/integra%C3%A7%C3%A3o-entre-dados-seguran%C3%A7a-e-inova%C3%A7%C3%A3o-colocam-s%C3%A3o-paulo-na-vanguarda-digital",
+      "publicacao": "2025-08-28"
+    },
+    "sp156_2025": {
+      "titulo": "2025 se destaca como ano de avanço para a tecnologia paulistana",
+      "url": "https://www2.prefeitura.sp.gov.br/web/inovacao/w/2025-se-destaca-como-ano-de-avan%C3%A7o-para-a-tecnologia-paulistana",
+      "publicacao": "2026-01-05"
+    },
+    "sp156_canais": {
+      "titulo": "Perguntas Frequentes SP156",
+      "url": "https://prefeitura.sp.gov.br/web/inovacao/w/acesso_a_informacao/350229",
+      "publicacao": "2026-06-16"
+    },
+    "pesquisa_pgm_2022": {
+      "titulo": "Perfil e satisfação dos usuários dos serviços da Dívida Ativa (FISC e Descomplica), pesquisa de 10 dias",
+      "url": "https://prefeitura.sp.gov.br/web/procuradoria_geral/w/noticias/337028",
+      "publicacao": "2022-10-27"
+    }
+  }
+}
