@@ -1,0 +1,1461 @@
+{
+  "esquema": "radar.triagem_automatica.v0.1",
+  "metodo": "Regras Python determinísticas, sem API de IA, sem inferência por modelo",
+  "uso_cientifico": "Fila de revisão e inventário documental; não prova impacto ou irregularidade",
+  "entradas": [
+    {
+      "arquivo": "dados/historico_politicas_sp.json",
+      "sha256": "2783d288238bb6a33455883a478e5f48528c163e37ff0a165259111a2626c53d"
+    },
+    {
+      "arquivo": "dados/triagem_orcamento_2026.json",
+      "sha256": "6dc50c0326397f2dfcd3fea084d8b576e428d171f71d0688097cdab13560b7f8"
+    },
+    {
+      "arquivo": "dados/analises_ia_piloto_v01.json",
+      "sha256": "1a2e77e4fc09fbff8521b10847d74a91ad658de042a7cdb5f024ef7ea5139a69"
+    },
+    {
+      "arquivo": "dados/edicoes_coletadas.json",
+      "sha256": "11984b3dcf2c484670b50a574fd313fd7de73c1ec945967cf34716a9178ce328"
+    }
+  ],
+  "resumo": {
+    "politicas_no_inventario": 3,
+    "atos_historicos_catalogados": 12,
+    "fichas_ia_anteriores_verificadas": 7,
+    "registros_de_orcamento_candidatos": 38,
+    "contagens_por_grupo_orcamentario": {
+      "atendimento_cidadao": 2,
+      "descomplica": 25,
+      "inclusao_digital": 1,
+      "telecentros": 8,
+      "wifi": 2
+    },
+    "atos_adicionais_a_importar": [
+      "Decreto 59.336/2020",
+      "Decreto 62.959/2023",
+      "Instrução Normativa CGM 3/2025"
+    ],
+    "edicoes_diario_oficial_registradas": 1,
+    "atos_extraidos_dessas_edicoes": false,
+    "efeitos_reais_comprovados_por_este_programa": 0
+  },
+  "revisao_documental": [
+    {
+      "id": "SPH-001",
+      "politica_id": "wifi",
+      "ato": "Lei 16.685/2017",
+      "data_ato": "2017-07-10",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/lei-16685-de-10-de-julho-de-2017/consolidado",
+      "descricao_curada_origem": "Criação legal do Programa Wi-Fi Livre Sampa, previsto para espaços e prédios públicos municipais.",
+      "categoria_origem": "marco_institucional",
+      "etiqueta_automatica": "Instituição normativa documentada",
+      "limites_herdados": "Marco normativo; nenhum efeito em usuários foi medido.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-008",
+      "politica_id": "descomplica",
+      "ato": "Decreto 58.378/2018",
+      "data_ato": "2018-08-23",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/decreto-58378-de-23-de-agosto-de-2018/consolidado",
+      "descricao_curada_origem": "Cria o Posto Avançado de Atendimento SF no Descomplica SP São Miguel Paulista.",
+      "categoria_origem": "ampliacao_potencial",
+      "etiqueta_automatica": "Previsão de ampliação a verificar",
+      "limites_herdados": "Criação normativa de uma unidade específica.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-005",
+      "politica_id": "atendimento",
+      "ato": "Decreto 58.426/2018",
+      "data_ato": "2018-09-18",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/decreto-58426-de-18-de-setembro-de-2018/consolidado",
+      "descricao_curada_origem": "Institui a Política Municipal de Atendimento ao Cidadão e prevê padrões e diretrizes de atendimento à população.",
+      "categoria_origem": "marco_institucional",
+      "etiqueta_automatica": "Instituição normativa documentada",
+      "limites_herdados": "Marco normativo, não avaliação de resultados.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-009",
+      "politica_id": "descomplica",
+      "ato": "Decreto 58.866/2019",
+      "data_ato": "2019-07-19",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/decreto-58866-de-19-de-julho-de-2019/consolidado",
+      "descricao_curada_origem": "Cria quatro unidades do Descomplica SP: Capela do Socorro, São Mateus, Penha e Jabaquara.",
+      "categoria_origem": "ampliacao_potencial",
+      "etiqueta_automatica": "Previsão de ampliação a verificar",
+      "limites_herdados": "Quatro criações normativas; não equivale à variação comprovada do total operante.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-006",
+      "politica_id": "atendimento",
+      "ato": "Decreto 60.620/2021",
+      "data_ato": "2021-10-06",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/decreto-60620-de-6-de-outubro-de-2021/consolidado",
+      "descricao_curada_origem": "Altera o art. 7º do Decreto 58.426/2018, relativo à composição do Conselho de Usuários dos Serviços Públicos.",
+      "categoria_origem": "alteracao_indeterminada",
+      "etiqueta_automatica": "Alteração sem efeito classificado",
+      "limites_herdados": "Não é possível classificar como ganho ou perda sem análise adicional.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-010",
+      "politica_id": "descomplica",
+      "ato": "Decreto 63.618/2024",
+      "data_ato": "2024-07-29",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/decreto-63618-de-29-de-julho-de-2024",
+      "descricao_curada_origem": "Cria dois postos avançados de atendimento SF vinculados ao Descomplica, em Perus/Anhanguera e Pinheiros.",
+      "categoria_origem": "ampliacao_potencial",
+      "etiqueta_automatica": "Previsão de ampliação a verificar",
+      "limites_herdados": "Duas criações normativas; não garante abertura ao público.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-002",
+      "politica_id": "wifi",
+      "ato": "Portaria conjunta SMIT/SMDHC 14/2024",
+      "data_ato": "2024-08-26",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-secretaria-municipal-de-inovacao-e-tecnologia-smit-secretaria-municipal-de-direitos-humanos-e-cidadania-smdhc-14-de-26-de-agosto-de-2024/consolidado",
+      "descricao_curada_origem": "Define diretrizes para fornecimento de Wi-Fi em unidades vinculadas a programas municipais de segurança alimentar e nutricional.",
+      "categoria_origem": "ampliacao_potencial",
+      "etiqueta_automatica": "Previsão de ampliação a verificar",
+      "limites_herdados": "Prevê implementação; não demonstra pontos ativados.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-003",
+      "politica_id": "wifi",
+      "ato": "Portaria conjunta SMIT/SVMA 3/2025",
+      "data_ato": "2025-01-24",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-secretaria-municipal-de-inovacao-e-tecnologia-smit-secretaria-municipal-do-verde-e-do-meio-ambiente-svma-3-de-24-de-janeiro-de-2025/consolidado",
+      "descricao_curada_origem": "Estabelece transferência de equipamentos e responsabilidades para implantação/manutenção do WiFi Livre SP em unidades de atendimento público ligadas ao meio ambiente.",
+      "categoria_origem": "ampliacao_potencial",
+      "etiqueta_automatica": "Previsão de ampliação a verificar",
+      "limites_herdados": "A portaria prevê ações; conclusão operacional não verificada.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-004",
+      "politica_id": "wifi",
+      "ato": "Portaria conjunta SMIT/SMADS 2/2025",
+      "data_ato": "2025-01-27",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/portaria-conjunta-secretaria-municipal-de-inovacao-e-tecnologia-smit-secretaria-municipal-de-assistencia-e-desenvolvimento-social-smads-2-de-27-de-janeiro-de-2025",
+      "descricao_curada_origem": "Disciplina implementação de Wi-Fi em Vila Reencontro, CRAS, CREAS e Centros POP vinculados à assistência social.",
+      "categoria_origem": "ampliacao_potencial",
+      "etiqueta_automatica": "Previsão de ampliação a verificar",
+      "limites_herdados": "Alcance e cobertura real ainda não comprovados.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-007",
+      "politica_id": "atendimento",
+      "ato": "Decreto 64.057/2025",
+      "data_ato": "2025-02-12",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/decreto-64057-de-12-de-fevereiro-de-2025/consolidado",
+      "descricao_curada_origem": "Modifica os arts. 10 e 12 do Decreto 58.426/2018 sobre condição dos conselheiros e possibilidade de consulta ao Conselho de Usuários.",
+      "categoria_origem": "alteracao_indeterminada",
+      "etiqueta_automatica": "Alteração sem efeito classificado",
+      "limites_herdados": "Não assumir impacto sobre usuários apenas por alteração redacional.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-011",
+      "politica_id": "descomplica",
+      "ato": "Decreto 65.133/2026",
+      "data_ato": "2026-04-28",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/leis/decreto-65133-de-28-de-abril-de-2026",
+      "descricao_curada_origem": "Suplementa R$ 4.854.618,90 para despesas de pessoal decorrentes de terceirização da atividade Descomplica SP, com cobertura retirada de dotações de serviços de TIC da mesma atividade.",
+      "categoria_origem": "alteracao_indeterminada",
+      "etiqueta_automatica": "Alteração sem efeito classificado",
+      "limites_herdados": "Remanejamento entre naturezas de despesa não é, por si só, perda líquida de recursos do programa.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    },
+    {
+      "id": "SPH-012",
+      "politica_id": "descomplica",
+      "ato": "Decreto 65.621/2026",
+      "data_ato": "2026-10-07",
+      "data_publicacao": null,
+      "documento_original": "https://legislacao.prefeitura.sp.gov.br/decreto-65621-de-7-de-outubro-de-2026",
+      "descricao_curada_origem": "Autoriza crédito suplementar de R$ 1.550.563,56 para despesas de exercícios anteriores vinculadas à manutenção/operação do Descomplica SP.",
+      "categoria_origem": "alteracao_indeterminada",
+      "etiqueta_automatica": "Alteração sem efeito classificado",
+      "limites_herdados": "Crédito para despesas anteriores não comprova expansão de atendimento.",
+      "pendencias_revisao": [
+        "Data de publicação no Diário Oficial não verificada",
+        "Revisão científica pendente"
+      ],
+      "resultado_empirico_comprovado": false,
+      "status": "pré-triagem sem verificação independente do ato"
+    }
+  ],
+  "fila_fichas_ia": [
+    {
+      "ficha": "RADAR-IA-001",
+      "titulo": "Participação em plataforma eletrônica e exigência de cadastro",
+      "tema": "participacao_social",
+      "prioridade_curada_origem": "alta",
+      "nivel_evidencia_declarado_origem": "E1",
+      "status": "hipótese de IA existente; não reanalisada por modelo",
+      "normas_referenciadas": [
+        "SPH-005"
+      ],
+      "normas_ausentes": [],
+      "dotacoes_referenciadas": [],
+      "dotacoes_ausentes": [],
+      "atos_novos_indicados_na_ficha": [
+        "Decreto 62.959/2023",
+        "Instrução Normativa CGM 3/2025"
+      ],
+      "tarefas_de_revisao": [
+        "Incorporar atos adicionais ao inventário histórico e verificar vigência",
+        "Submeter a ficha à revisão humana"
+      ],
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false
+    },
+    {
+      "ficha": "RADAR-IA-002",
+      "titulo": "Redução da previsão expressa de consulta sobre indicação do Ouvidor-Geral",
+      "tema": "alteracao_normativa",
+      "prioridade_curada_origem": "media",
+      "nivel_evidencia_declarado_origem": "E1",
+      "status": "hipótese de IA existente; não reanalisada por modelo",
+      "normas_referenciadas": [
+        "SPH-005",
+        "SPH-007"
+      ],
+      "normas_ausentes": [],
+      "dotacoes_referenciadas": [],
+      "dotacoes_ausentes": [],
+      "atos_novos_indicados_na_ficha": [],
+      "tarefas_de_revisao": [
+        "Submeter a ficha à revisão humana"
+      ],
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false
+    },
+    {
+      "ficha": "RADAR-IA-003",
+      "titulo": "Crédito de 2026 coincide com duas dotações da base do TCM-SP",
+      "tema": "ligacao_lei_orcamento",
+      "prioridade_curada_origem": "alta",
+      "nivel_evidencia_declarado_origem": "E1",
+      "status": "hipótese de IA existente; não reanalisada por modelo",
+      "normas_referenciadas": [
+        "SPH-012"
+      ],
+      "normas_ausentes": [],
+      "dotacoes_referenciadas": [
+        "201601",
+        "201895"
+      ],
+      "dotacoes_ausentes": [],
+      "atos_novos_indicados_na_ficha": [],
+      "tarefas_de_revisao": [
+        "Confirmar órgão, programa, ação, elemento e fonte da dotação; não somar",
+        "Submeter a ficha à revisão humana"
+      ],
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false
+    },
+    {
+      "ficha": "RADAR-IA-004",
+      "titulo": "Decreto de criação de quatro unidades foi revogado em 2020",
+      "tema": "vigencia_normativa",
+      "prioridade_curada_origem": "alta",
+      "nivel_evidencia_declarado_origem": "E1",
+      "status": "hipótese de IA existente; não reanalisada por modelo",
+      "normas_referenciadas": [
+        "SPH-009"
+      ],
+      "normas_ausentes": [],
+      "dotacoes_referenciadas": [],
+      "dotacoes_ausentes": [],
+      "atos_novos_indicados_na_ficha": [
+        "Decreto 59.336/2020"
+      ],
+      "tarefas_de_revisao": [
+        "Incorporar atos adicionais ao inventário histórico e verificar vigência",
+        "Submeter a ficha à revisão humana"
+      ],
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false
+    },
+    {
+      "ficha": "RADAR-IA-005",
+      "titulo": "Oferta prevista em equipamentos da assistência social",
+      "tema": "conectividade_publica",
+      "prioridade_curada_origem": "alta",
+      "nivel_evidencia_declarado_origem": "E1",
+      "status": "hipótese de IA existente; não reanalisada por modelo",
+      "normas_referenciadas": [
+        "SPH-001",
+        "SPH-004"
+      ],
+      "normas_ausentes": [],
+      "dotacoes_referenciadas": [
+        "187072",
+        "187073"
+      ],
+      "dotacoes_ausentes": [],
+      "atos_novos_indicados_na_ficha": [],
+      "tarefas_de_revisao": [
+        "Confirmar órgão, programa, ação, elemento e fonte da dotação; não somar",
+        "Submeter a ficha à revisão humana"
+      ],
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false
+    },
+    {
+      "ficha": "RADAR-IA-006",
+      "titulo": "Remanejamento de 2026 entre TIC e terceirização exige interpretação cuidadosa",
+      "tema": "classificacao_orcamentaria",
+      "prioridade_curada_origem": "media",
+      "nivel_evidencia_declarado_origem": "E1",
+      "status": "hipótese de IA existente; não reanalisada por modelo",
+      "normas_referenciadas": [
+        "SPH-011"
+      ],
+      "normas_ausentes": [],
+      "dotacoes_referenciadas": [],
+      "dotacoes_ausentes": [],
+      "atos_novos_indicados_na_ficha": [],
+      "tarefas_de_revisao": [
+        "Submeter a ficha à revisão humana"
+      ],
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false
+    },
+    {
+      "ficha": "RADAR-IA-007",
+      "titulo": "Dotação com Orçado positivo e Atualizado zero, sem inferência de cancelamento de serviço",
+      "tema": "anomalia_orcamentaria",
+      "prioridade_curada_origem": "media",
+      "nivel_evidencia_declarado_origem": "E0",
+      "status": "hipótese de IA existente; não reanalisada por modelo",
+      "normas_referenciadas": [],
+      "normas_ausentes": [],
+      "dotacoes_referenciadas": [
+        "193164"
+      ],
+      "dotacoes_ausentes": [],
+      "atos_novos_indicados_na_ficha": [],
+      "tarefas_de_revisao": [
+        "Confirmar órgão, programa, ação, elemento e fonte da dotação; não somar",
+        "Submeter a ficha à revisão humana"
+      ],
+      "impacto_real_comprovado": false,
+      "irregularidade_confirmada": false
+    }
+  ],
+  "candidatos_orcamentarios": [
+    {
+      "id_dotacao_bruto": "186205",
+      "linha_csv": 497,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "1000.00",
+        "Atualizado": "1000.00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "1000.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187059",
+      "linha_csv": 1156,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "150000.00",
+        "Atualizado": "117777.00",
+        "EmpenhadoBruto": "50550.24",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "50550.24",
+        "Liquidado": "10144.49",
+        "Pago": "10144.49",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "150000.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187073",
+      "linha_csv": 1157,
+      "grupos_por_descricao": [
+        "wifi"
+      ],
+      "valores_brutos": {
+        "Proposto": "300000.00",
+        "Atualizado": "284190.00",
+        "EmpenhadoBruto": "35700.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "35700.00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "300000.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187081",
+      "linha_csv": 1182,
+      "grupos_por_descricao": [
+        "telecentros"
+      ],
+      "valores_brutos": {
+        "Proposto": "799757.00",
+        "Atualizado": "799757.00",
+        "EmpenhadoBruto": "219935.96",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "219935.96",
+        "Liquidado": "203214.29",
+        "Pago": "203214.29",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "799757.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187078",
+      "linha_csv": 1193,
+      "grupos_por_descricao": [
+        "telecentros"
+      ],
+      "valores_brutos": {
+        "Proposto": "9287836.00",
+        "Atualizado": "9287836.00",
+        "EmpenhadoBruto": "10265231.95",
+        "Anulado": "1187221.46",
+        "EmpenhadoLiquido": "9078010.49",
+        "Liquidado": "8963617.92",
+        "Pago": "8963617.92",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "9287836.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187063",
+      "linha_csv": 1222,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "42724646.00",
+        "Atualizado": "22825500.62",
+        "EmpenhadoBruto": "32928904.34",
+        "Anulado": "11882221.62",
+        "EmpenhadoLiquido": "21046682.72",
+        "Liquidado": "13810217.66",
+        "Pago": "13129302.92",
+        "Congelado": ".57",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "42724646.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187076",
+      "linha_csv": 1224,
+      "grupos_por_descricao": [
+        "atendimento_cidadao"
+      ],
+      "valores_brutos": {
+        "Proposto": "2869498.00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "2869498.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187061",
+      "linha_csv": 1282,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "1690734.00",
+        "Atualizado": "1327527.00",
+        "EmpenhadoBruto": "1325252.27",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "1325252.27",
+        "Liquidado": "898224.98",
+        "Pago": "872423.96",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "1690734.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187064",
+      "linha_csv": 1283,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "23519401.00",
+        "Atualizado": "13210237.19",
+        "EmpenhadoBruto": "35621029.96",
+        "Anulado": "22410792.77",
+        "EmpenhadoLiquido": "13210237.19",
+        "Liquidado": "8915250.54",
+        "Pago": "7507584.62",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "23519401.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187065",
+      "linha_csv": 1284,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "50000.00",
+        "Atualizado": "39259.00",
+        "EmpenhadoBruto": "39259.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "39259.00",
+        "Liquidado": "39259.00",
+        "Pago": "39259.00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "50000.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187072",
+      "linha_csv": 1300,
+      "grupos_por_descricao": [
+        "wifi"
+      ],
+      "valores_brutos": {
+        "Proposto": "56983749.00",
+        "Atualizado": "53980732.00",
+        "EmpenhadoBruto": "53980732.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "53980732.00",
+        "Liquidado": "28689920.00",
+        "Pago": "28689920.00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "56983749.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187080",
+      "linha_csv": 1301,
+      "grupos_por_descricao": [
+        "telecentros"
+      ],
+      "valores_brutos": {
+        "Proposto": "16973.00",
+        "Atualizado": "16973.00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "16973.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "187082",
+      "linha_csv": 1302,
+      "grupos_por_descricao": [
+        "telecentros"
+      ],
+      "valores_brutos": {
+        "Proposto": "823076.00",
+        "Atualizado": "823076.00",
+        "EmpenhadoBruto": "823076.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "823076.00",
+        "Liquidado": "615783.98",
+        "Pago": "615783.98",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "823076.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "189706",
+      "linha_csv": 2964,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "1000.00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "1000.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "191428",
+      "linha_csv": 3564,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "950461.00",
+        "Atualizado": "950461.00",
+        "EmpenhadoBruto": "956941.63",
+        "Anulado": "42480.66",
+        "EmpenhadoLiquido": "914460.97",
+        "Liquidado": "401118.22",
+        "Pago": "371879.64",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "950461.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "191536",
+      "linha_csv": 3815,
+      "grupos_por_descricao": [
+        "telecentros"
+      ],
+      "valores_brutos": {
+        "Proposto": "10027.00",
+        "Atualizado": "10027.00",
+        "EmpenhadoBruto": "13396.72",
+        "Anulado": "3369.72",
+        "EmpenhadoLiquido": "10027.00",
+        "Liquidado": "6657.28",
+        "Pago": "6657.28",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "10027.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "191648",
+      "linha_csv": 4032,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": "591634.00",
+        "Atualizado": "563687.96",
+        "EmpenhadoBruto": "1063687.96",
+        "Anulado": "500000.00",
+        "EmpenhadoLiquido": "563687.96",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "591634.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193312",
+      "linha_csv": 4342,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "273851.72",
+        "EmpenhadoBruto": "273851.72",
+        "Anulado": "113573.14",
+        "EmpenhadoLiquido": "160278.58",
+        "Liquidado": "160278.58",
+        "Pago": "160278.58",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193314",
+      "linha_csv": 4343,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "106280.44",
+        "EmpenhadoBruto": "106280.44",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "106280.44",
+        "Liquidado": "106280.44",
+        "Pago": "106280.44",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193310",
+      "linha_csv": 4377,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "804.66",
+        "EmpenhadoBruto": "804.66",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "804.66",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193311",
+      "linha_csv": 4378,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193315",
+      "linha_csv": 4379,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "1018.00",
+        "EmpenhadoBruto": "1018.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "1018.00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193476",
+      "linha_csv": 4486,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "1580830.79",
+        "EmpenhadoBruto": "1648116.08",
+        "Anulado": "110122.61",
+        "EmpenhadoLiquido": "1537993.47",
+        "Liquidado": "1196428.32",
+        "Pago": "1184312.41",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193164",
+      "linha_csv": 4506,
+      "grupos_por_descricao": [
+        "inclusao_digital"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": "650000.00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193477",
+      "linha_csv": 4520,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "4663617.00",
+        "EmpenhadoBruto": "4663617.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "4663617.00",
+        "Liquidado": "3791296.14",
+        "Pago": "3791296.14",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193313",
+      "linha_csv": 4606,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": ".38",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "193475",
+      "linha_csv": 4739,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "19098293.21",
+        "EmpenhadoBruto": "19247378.69",
+        "Anulado": "149085.48",
+        "EmpenhadoLiquido": "19098293.21",
+        "Liquidado": "12846109.86",
+        "Pago": "11288446.89",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "194083",
+      "linha_csv": 5021,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "194905",
+      "linha_csv": 5789,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "194908",
+      "linha_csv": 5948,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "337634.40",
+        "EmpenhadoBruto": "275783.60",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "275783.60",
+        "Liquidado": "99618.81",
+        "Pago": "73878.93",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "194856",
+      "linha_csv": 6227,
+      "grupos_por_descricao": [
+        "atendimento_cidadao"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "194906",
+      "linha_csv": 6256,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "60000.00",
+        "EmpenhadoBruto": "46711.60",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "46711.60",
+        "Liquidado": "30000.00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "194907",
+      "linha_csv": 6289,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "195431",
+      "linha_csv": 6786,
+      "grupos_por_descricao": [
+        "telecentros"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "408492.00",
+        "EmpenhadoBruto": "408492.00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "408492.00",
+        "Liquidado": "408492.00",
+        "Pago": "408492.00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "201601",
+      "linha_csv": 6873,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "1528028.42",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "199692",
+      "linha_csv": 6897,
+      "grupos_por_descricao": [
+        "telecentros"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": ".00",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "200971",
+      "linha_csv": 7373,
+      "grupos_por_descricao": [
+        "telecentros"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "10152.92",
+        "EmpenhadoBruto": "10152.92",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": "10152.92",
+        "Liquidado": "5283.86",
+        "Pago": "3713.10",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    },
+    {
+      "id_dotacao_bruto": "201895",
+      "linha_csv": 7686,
+      "grupos_por_descricao": [
+        "descomplica"
+      ],
+      "valores_brutos": {
+        "Proposto": ".00",
+        "Atualizado": "22535.14",
+        "EmpenhadoBruto": ".00",
+        "Anulado": ".00",
+        "EmpenhadoLiquido": ".00",
+        "Liquidado": ".00",
+        "Pago": ".00",
+        "Congelado": ".00",
+        "RestosSaldoTransferido": ".00",
+        "RestosProcessados": ".00",
+        "RestosNaoProcessados": ".00",
+        "RestosLiquidado": ".00",
+        "RestosPago": ".00",
+        "RestosCancelado": ".00",
+        "RestosSaldo": ".00",
+        "Orï¿½ado": ".00"
+      },
+      "atribuicao_a_politica_validada": false,
+      "observacao": "Correspondência textual; nenhuma soma ou efeito inferido"
+    }
+  ],
+  "alertas_tecnicos": [
+    "Cabeçalhos do orçamento apresentam caracteres corrompidos"
+  ],
+  "limites": [
+    "Só examina os metadados e resumos existentes no repositório; não lê os textos integrais das normas.",
+    "Não detecta atos publicados depois do corte; precisa de importação separada do Diário Oficial.",
+    "Não compara automaticamente redações artigo a artigo nem decide se houve ganho ou perda.",
+    "Não calcula valores totais, variação percentual, evolução histórica financeira nem execução atribuível.",
+    "Dotações textualmente relacionadas não são todas as dotações de uma política.",
+    "Toda hipótese de exclusão digital exige revisão humana e, quando cabível, testes e triangulação."
+  ]
+}
