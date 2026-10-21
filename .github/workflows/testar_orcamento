@@ -1,0 +1,32 @@
+name: RADAR SP - Teste Orcamento
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  testar-orcamento:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Baixar codigo do RADAR
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Investigar dados orcamentarios
+        run: python scripts/inspecionar_orcamento.py
+
+      - name: Guardar resultado da investigacao
+        uses: actions/upload-artifact@v4
+        with:
+          name: triagem-orcamento-radar
+          path: dados/triagem_orcamento_2026.json
+          if-no-files-found: error
+          retention-days: 7
