@@ -1,0 +1,49 @@
+name: RADAR SP - Triagem Documental
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar-sp-triagem
+  cancel-in-progress: false
+
+jobs:
+  triagem:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Executar triagem documental
+        run: python scripts/triagem_automatica.py
+
+      - name: Guardar copia da triagem
+        uses: actions/upload-artifact@v4
+        with:
+          name: triagem-documental-radar
+          path: dados/triagem_automatizada_v01.json
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Publicar resultado no repositorio
+        run: |
+          test -s dados/triagem_automatizada_v01.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/triagem_automatizada_v01.json
+          if git diff --cached --quiet; then
+            echo "Sem mudancas para publicar."
+          else
+            git commit -m "dados: atualizar triagem documental RADAR"
+            git push origin HEAD:main
+          fi
