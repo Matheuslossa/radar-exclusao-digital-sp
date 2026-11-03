@@ -126,5 +126,21 @@
     "atos_extraidos": false,
     "analise_de_exclusao_digital": "nao_realizada",
     "validacao_cientifica": "pendente"
+  },
+  {
+    "municipio_ibge": "3550308",
+    "data_edicao": "2026-11-03",
+    "numero_edicao_interno": "14145",
+    "url_fonte_listagem": "https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=diario_aberto&formato=A",
+    "url_download_json": "https://diariooficial.prefeitura.sp.gov.br/md_epubli_controlador.php?acao=edicao_download&dta=03%2F11%2F2026&formato=json&numEdicao=14145",
+    "sha256_conteudo": "b2550d13b1fc77130a194651a4c9a57eb5503a4e3155f18a50d4bcf3dfbb8825",
+    "bytes_conteudo": 15570339,
+    "formato_json_validado": "json_unico_ponto_virgula_final",
+    "blocos_json_validados": 1,
+    "data_coleta_utc": "2026-11-03T19:51:56+00:00",
+    "tipo_registro": "metadados_edicao_oficial",
+    "atos_extraidos": false,
+    "analise_de_exclusao_digital": "nao_realizada",
+    "validacao_cientifica": "pendente"
   }
 ]
